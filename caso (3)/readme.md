@@ -19,9 +19,11 @@ Criterios de Aceptación:
     ENTONCES solo deberá aceptar y transmitir datos de ese tipo, rechazando cualquier otro.
 
 Ejecucion
+
     Clonar el repositorio
     Abrir y ejecutar el proyecto "kafka-producer" en intelliJ on un ide similar que permita ejecutar aplicaciones java
     Abrir y ejecutar el proyecto "kafka-consumer" en intelliJ on un ide similar que permita ejecutar aplicaciones java
 
 Testing
+
     Abrir Postman e importar el json KafkaTopics.postman_collection.json; o, enviar una petición POST al endpoint: http://localhost:8090/api/kafka/send y 2 Parámetros con sus valores: "topic" y "message". Para topic existen 3 valores válidos: query, price, purchase.
