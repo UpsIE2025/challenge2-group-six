@@ -1,0 +1,28 @@
+version: '3.8'
+
+networks:
+  rabbitmq-network:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    networks:
+      - rabbitmq-network
+    ports:
+      - "5672:5672"    # Puerto de comunicaciÃ³n AMQP
+      - "15672:15672"  # UI de administraciÃ³n
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+      RABBITMQ_DEFAULT_VHOST: "/"
+      RABBITMQ_NODE_PORT: 5672
+      RABBITMQ_NODE_IP_ADDRESS: 0.0.0.0
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq_data:
+    driver: local
