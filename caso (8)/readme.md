@@ -1,3 +1,9 @@
+# 📨 Bridge de Mensajería entre Kafka y RabbitMQ
+
+Este proyecto implementa un **puente de mensajería** entre Kafka y RabbitMQ usando **Node.js**.  
+Se reciben mensajes en **texto plano** desde un topic en Kafka, se convierten a **JSON** y se reenvían a una cola en RabbitMQ.  
+Además, se envían **notificaciones de confirmación** a ambos sistemas.
+---
 ## Historia de Usuario: Puente de Mensajería
 
 ### 🎯 **Historia de Usuario**
@@ -22,13 +28,6 @@
 Una tienda en línea utiliza un sistema de mensajería basado en Kafka para procesar órdenes de compra. Sin embargo, su proveedor bancario utiliza RabbitMQ para la autorización de pagos. Para garantizar que los mensajes de confirmación de compra lleguen correctamente al banco y viceversa, se implementa un **puente de mensajería** que traduce los mensajes de Kafka a RabbitMQ y viceversa.  
 
 ✅ *Resultado:* La tienda puede confirmar los pagos en tiempo real y el banco recibe correctamente las solicitudes sin necesidad de cambiar su infraestructura.
-
-
-# 📨 Bridge de Mensajería entre Kafka y RabbitMQ
-
-Este proyecto implementa un **puente de mensajería** entre Kafka y RabbitMQ usando **Node.js**.  
-Se reciben mensajes en **texto plano** desde un topic en Kafka, se convierten a **JSON** y se reenvían a una cola en RabbitMQ.  
-Además, se envían **notificaciones de confirmación** a ambos sistemas.
 
 ---
 
