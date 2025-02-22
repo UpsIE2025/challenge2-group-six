@@ -1,8 +1,8 @@
 const express = require("express");
 const kafkaService = require("./services/kafkaService");
 const redisService = require("./services/redisService");
-//const { processMessage } = require("./handlers/messageHandler");
-//const retry = require("./utils/retryPolicy");
+const { processMessage } = require("./handlers/messageHandler");
+const retry = require("./utils/retryPolicy");
 
 const app = express();
 const port = 3000;
