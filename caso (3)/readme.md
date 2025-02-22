@@ -27,4 +27,5 @@ Ejecucion
 Testing
 
     Abrir Postman e importar el json KafkaTopics.postman_collection.json; o,
-    Enviar una petición POST al endpoint: http://localhost:8090/api/kafka/send y 2 Parámetros con sus valores: "topic" y "message". Para topic existen 3 valores válidos: query, price, purchase.
+    Enviar una petición POST al endpoint: http://localhost:8090/api/kafka/send y 2 Parámetros con sus valores: "topic"
+    y "message". Para topic existen 3 valores válidos: query, price, purchase.
