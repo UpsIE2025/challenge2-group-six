@@ -2,7 +2,8 @@ User Story
 
     COMO desarrollador de integración,
     QUIERO usar un canal de tipo de datos separado para cada tipo de datos,
-    PARA asegurar que todos los datos en un canal específico sean del mismo tipo y facilitar su correcta identificación y procesamiento.
+    PARA asegurar que todos los datos en un canal específico sean del mismo tipo y facilitar su
+    correcta identificación y procesamiento.
 
 Criterios de Aceptación:
 
