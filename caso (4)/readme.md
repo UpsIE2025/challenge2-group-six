@@ -49,7 +49,7 @@ PARA garantizar la trazabilidad y recuperación de mensajes fallidos.
 
    - Abre Postman.
    - Haz clic en "Import" en la esquina superior izquierda.
-   - Selecciona "Upload Files" y carga el archivo `CASO 4.postman_collection.json` ubicado en `D:/MAESTRIA/PATRONES DE INTEGRACION EMPRESARIAL/RETOS/challenge2/caso (4)/`.
+   - Selecciona "Upload Files" y carga el archivo `CASO 4.postman_collection.json` ubicado en la carpeta raiz del caso (4)`.
 
 2. **Enviar un mensaje**:
 
