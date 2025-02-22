@@ -1,5 +1,6 @@
 const { Kafka } = require('kafkajs');
 const kafkaConfig = require('../config/kafkaConfig');
+const { pushToDeadLetterQueue } = require('../redis/redisService');
 
 const kafka = new Kafka({
     clientId: kafkaConfig.clientId,
@@ -15,10 +16,10 @@ const sendMessage = async ({ topic, message }) => {
             topic: topic,
             messages: [{ value: message }]
         });
-        console.log('📤 Mensaje enviado');
-        // console.log('📤 Mensaje enviado:', message, 'Resultado:', result);
+        console.log(`📤 Mensaje enviado al tópico ${topic}`);
     } catch (error) {
-        console.error('❌ Error al enviar mensaje:', error);
+        console.error(`❌ Error al enviar mensaje al tópico ${topic}:`, error);
+        await pushToDeadLetterQueue({ topic, message, error: error.message, timestamp: new Date() });
     } finally {
         await producer.disconnect();
     }
