@@ -13,7 +13,7 @@ class SendMessageUseCase {
             content: message,
             type: MessageTypes.STRING
         });
-        await producer.sendMessage({ topic: topic, message: JSON.stringify(msg) });
+        await producer.sendMessage({ topic: topic, message: msg.content });
     };
 }
 
