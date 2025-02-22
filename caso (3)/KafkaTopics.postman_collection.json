@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "3175e2bd-9795-4094-8e96-089f60e62c8d",
+		"name": "KafkaTopics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16564450"
+	},
+	"item": [
+		{
+			"name": "MesageToTopics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/kafka/send?topic=purchase&message=Sold",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"kafka",
+						"send"
+					],
+					"query": [
+						{
+							"key": "topic",
+							"value": "purchase",
+							"description": "posible topics: query, price, purchase"
+						},
+						{
+							"key": "message",
+							"value": "Sold",
+							"description": "any value"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
