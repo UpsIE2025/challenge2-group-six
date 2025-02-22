@@ -1,4 +1,4 @@
-User Story
+Historia de Usuario
 
     COMO desarrollador de integración,
     QUIERO usar un canal de tipo de datos separado para cada tipo de datos,
