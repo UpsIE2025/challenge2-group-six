@@ -89,4 +89,5 @@ module.exports = {
     pushToDeadLetterQueue,
     getDeadLetterMessages,
     closeRedisConnection,
+    isRedisAvailable,
 };
