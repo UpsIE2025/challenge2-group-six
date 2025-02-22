@@ -49,7 +49,7 @@ PARA garantizar la trazabilidad y recuperación de mensajes fallidos.
 
    - Abre Postman.
    - Haz clic en "Import" en la esquina superior izquierda.
-   - Selecciona "Upload Files" y carga el archivo `CASO 4.postman_collection.json` ubicado en la carpeta raiz del caso (4)`.
+   - Selecciona "Upload Files" y carga el archivo `CASO 4.postman_collection.json` ubicado en la carpeta raiz del caso (4).
 
 2. **Enviar un mensaje**:
 
@@ -72,6 +72,5 @@ Con estos pasos, deberías poder ejecutar tanto el productor como el consumidor 
 
 ```
 
-Asegúrate de que las variables de entorno estén configuradas correctamente en el archivo `.env` y que el archivo `CASO 4.postman_collection.json` esté importado en Postman para realizar las pruebas.
 Asegúrate de que las variables de entorno estén configuradas correctamente en el archivo `.env` y que el archivo `CASO 4.postman_collection.json` esté importado en Postman para realizar las pruebas.
 ```
