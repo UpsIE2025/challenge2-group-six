@@ -49,11 +49,13 @@ Puedes ejecutar múltiples consumidores:
 ```sh
 python consumerOne.py
 python consumerTwo_kafka.py
+python consumerThree.py
 ```
 O iniciar dos consumidores en diferentes terminales:
 ```sh
 python consumerOne.py &  # Consumidor 1
 python consumerTwo_kafka.py  #Consumidor 2
+python consumerThree.py #Consumidor 2
 ```
 
 ---
