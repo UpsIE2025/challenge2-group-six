@@ -25,3 +25,15 @@ Kafka se encargará de la gestión de los mensajes en tiempo real.
 Redis actuará como almacenamiento temporal de mensajes fallidos.
 El API en Node.js manejará la lógica de reenvío y monitoreo de los mensajes fallidos.
 Se implementará un mecanismo de reintentos configurable para minimizar la pérdida de mensajes.
+
+![alt text](image.png)
+
+postman
+
+{
+  "topic": "original-topic",
+  "message": {
+    "key": "value",
+    "shouldFail": true
+  }
+}
