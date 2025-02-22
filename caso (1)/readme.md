@@ -1,4 +1,10 @@
 # Kafka con Flask
+Historia de Usuario
+Título: Enviar y recibir mensajes a través de un canal punto a punto
+
+Como un desarrollador de sistemas de mensajería,
+Quiero enviar mensajes desde un productor y asegurarme de que solo un receptor lo consuma,
+Para garantizar la entrega única y evitar que múltiples receptores procesen el mismo mensaje.
 
 Este proyecto implementa un sistema de mensajería basado en Kafka y Flask. Contiene:
 - Un **productor** para enviar mensajes a Kafka.
@@ -10,7 +16,7 @@ Este proyecto implementa un sistema de mensajería basado en Kafka y Flask. Cont
 ## 📌 Requisitos
 
 - Python 3.8 o superior
-- Kafka y Zookeeper instalados
+- Kafka
 - Librerías necesarias en `requirements.txt`
 
 ---
