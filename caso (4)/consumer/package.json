@@ -1,0 +1,24 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "main": "dist/consumer.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/consumer.js",
+    "dev": "ts-node src/consumer.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "consumer": "file:",
+    "dotenv": "^16.4.7",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
