@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="https://logging.apache.org/xml/ns"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="https://logging.apache.org/xml/ns
+                                   https://logging.apache.org/xml/ns/log4j-config-2.xsd">
+
+    <Properties>
+        <Property name="pattern">%d [%t] %5p | %X{app-name} | %c - %m%n</Property>
+    </Properties>
+
+    <appenders>
+        <Console name="CONSOLE">
+            <PatternLayout pattern="${pattern}"/>
+        </Console>
+        <File name="FILE" fileName="logs/app.log">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="INFO">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="FILE"/>
+        </root>
+    </loggers>
+
+</Configuration>
