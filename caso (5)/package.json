@@ -1,0 +1,16 @@
+{
+  "name": "dead-letter-queue",
+  "version": "1.0.0",
+  "description": "Dead Letter Queue implementation using Kafka and Redis",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dead-letter-queue": "file:",
+    "express": "^4.21.2",
+    "ioredis": "^5.5.0",
+    "kafkajs": "^1.16.0",
+    "redis": "^4.0.1"
+  }
+}
