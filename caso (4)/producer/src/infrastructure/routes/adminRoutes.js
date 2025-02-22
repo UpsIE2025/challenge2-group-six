@@ -7,7 +7,7 @@ const setAdminRoutes = (app) => {
 
     router.get('/failed-messages', adminController.getFailedMessages);
 
-    app.use('/api/admin', router);
+    app.use('/api', router);
 };
 
 module.exports = setAdminRoutes;

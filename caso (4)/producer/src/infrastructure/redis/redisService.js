@@ -57,7 +57,7 @@ setInterval(checkRedisAvailability, 5000);
 // Función para enviar mensajes a la Dead Letter Queue
 const pushToDeadLetterQueue = async (message) => {
     try {
-        await client.lPush('dead_letter_queue', JSON.stringify(message));
+        await client.call('LPUSH', 'dead_letter_queue', JSON.stringify(message));
         console.log('📥 Mensaje agregado a la Dead Letter Queue');
     } catch (error) {
         console.error('❌ Error al agregar mensaje a la Dead Letter Queue:', error.message);
@@ -67,7 +67,7 @@ const pushToDeadLetterQueue = async (message) => {
 // Función para obtener mensajes de la Dead Letter Queue
 const getDeadLetterMessages = async () => {
     try {
-        const messages = await client.lRange('dead_letter_queue', 0, -1);
+        const messages = await client.call('LRANGE', 'dead_letter_queue', 0, -1);
         return messages.map(msg => JSON.parse(msg));
     } catch (error) {
         console.error('❌ Error al obtener mensajes de la Dead Letter Queue:', error.message);
