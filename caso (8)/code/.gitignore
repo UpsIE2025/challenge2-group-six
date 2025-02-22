@@ -21,11 +21,6 @@ npm-debug.log
 yarn-debug.log
 pnpm-debug.log
 
-# Ignorar archivos de entorno
-.env
-.env.local
-.env.*.local
-
 # Ignorar directorios de build y salida
 dist/
 build/
